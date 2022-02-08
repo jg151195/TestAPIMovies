@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    display: block;
+    padding-left: 75px;
+    text-align: justify;
+    background-color:rgba(165, 55, 253,1);
+}
+img{
+    margin: 10px;
+}
+#nav{
+    display: flex;
+
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 15px;
+}
+input{
+    border-radius: 0.5em;
+}
+/* From cssbuttons.io by @Mike11jr */
+.butao {
+    border-radius: 0.5em;
+    padding: 0.3em 0.3em;
+    font-size: 16px;
+    border: none;
+    background: #6285f8;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+   }
+   
+   .butao:hover {
+    color: rgb(255, 255, 255);
+   }
+   
+   .butao::before,.butao::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.096);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    transition: all 0.4s;
+   }
+   
+   .butao::after {
+    z-index: -2;
+    transition: all 0.4s;
+   }
+   
+   .butao:hover::before {
+    background: rgb(0, 0, 0, 0.315);
+    border-radius: 10px;
+   }
+   
+   .butao:hover::after {
+    background: linear-gradient(to right, #cb6ce6, #38b6ff);
+    border-radius: 10px;
+    transform: scale(1.07, 1.2) rotateX(180deg);
+   }
+  
