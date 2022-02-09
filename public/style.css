@@ -2,21 +2,38 @@
     padding: 0;
     margin: 0;
 }
-
-#container{
-    display: block;
-    padding-left: 75px;
+#movie_box{
+    box-sizing: border-box;
+}
+p{
+    font-size: 1.2em;
     text-align: justify;
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 50px;
+    
+}
+body{
+    background-color: blueviolet;
+}
+#container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 75px;
+    text-align: center;
     background-color:rgba(165, 55, 253,1);
 }
+
 img{
+
     margin: 10px;
 }
 #nav{
     display: flex;
 
     justify-content: center;
-    background-color: blueviolet;
     padding: 15px;
 }
 input{
